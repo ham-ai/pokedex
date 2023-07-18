@@ -1,8 +1,16 @@
 .content{
     padding: 1rem;
-    background-color: #fff;
+    background-color: #DADFE8;
     height: 100vh;
     width: 100vw;
+}
+
+#detailPage{
+    background-color: #e0d2de;
+    border-radius: 1rem;
+    margin-bottom: 0.3rem;
+    padding: 2px;
+    filter: drop-shadow(4px 2px 7px);
 }
 
 .normal {
@@ -158,7 +166,7 @@
 }
 
 body{
-    background-color: #f3f4f5;
+    background-color: #FFFFFF;
 }
 
 .pokemon{

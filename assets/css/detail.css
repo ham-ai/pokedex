@@ -1,0 +1,123 @@
+
+.content{
+    padding: 1rem;
+    background-color: #F6F8FC;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+
+.card{
+    background-color: #FC6C6D;
+    width: 400px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border-radius: 2rem;
+
+}
+
+.title{
+    width: max-content;
+    height: max-content;
+    letter-spacing: 2px;
+    color: white;
+    margin: 1rem;
+    margin-top: -50px;
+    margin-left: 50px;
+    font-size: larger;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.back_page img{
+    width: 60px;
+    height: 40px;
+    margin: 2rem;
+    margin-top: 40px
+}
+
+.heart img{
+    width: 60px;
+    height: 20px;
+    margin: 2rem;
+    margin-top: 50px;
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: max-content;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 39px;
+    color: white;
+}
+
+.type1{
+    background-color: #f65873;
+    width: 100px;
+    padding: 6px;
+    border-radius: 1rem;
+    margin-left: 10px;
+}
+
+.type2{
+    background-color: pink;
+    width: 100px;
+    padding: 6px;
+    border-radius: 1rem;
+    margin-left: 10px;
+}
+
+
+.image_body{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+}
+
+#imgPoke{
+    width: 200px;
+    height: 200px;
+}
+
+.card_body{
+    
+}
+
+
+@media screen and (max-width: 992px){
+    .card{
+        width: 450px;
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .card{
+        width: 400px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .card{
+        width: 400px;
+        height: 550px;
+    }
+}
