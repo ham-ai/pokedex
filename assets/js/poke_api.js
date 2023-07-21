@@ -24,6 +24,12 @@ pokeApi.getPokemonDetail = (pokemon) => {
     .then(pokeApiDetailToPokemon)
 }
 
+pokeApi.getDetail = (pokemon) => {
+    return fetch(pokemon.url)
+    .then((response) => response.json())
+    .then(DetailsPokePage)
+}
+
 pokeApi.getPokemons = (offset = 0, limit = 20) => {
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
     
@@ -34,4 +40,40 @@ pokeApi.getPokemons = (offset = 0, limit = 20) => {
     .then((detailRequests) => Promise.all(detailRequests))
     .then((pokemonsDetails) => pokemonsDetails)
     .catch((error) => console.log(error))
+}
+
+
+
+// Detalhes Pokemon Página
+function getDetailsPage(){
+    const urlParams = new URLSearchParams(window.location.search);
+    const pokemonId = urlParams.get('id');
+
+   return fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
+    .then(response => response.json())
+    .then((jsonBody) => jsonBody.results)
+    .then((pokemons) => pokemons.map(getDetail))
+    .then((detailRequests) => Promise.all(detailRequests))
+    .then((pokemonsDetails) => pokemonsDetails)
+    .catch((error) => console.log(error))
+}
+
+
+function DetailsPokePage(detailsPoke){
+    const pokemon = new Pokemon()
+    pokemon.species = PokemonDetails.species;
+    pokemon.height = PokemonDetails.height;
+    pokemon.weight = PokemonDetails.weight;
+    pokemon.gender = PokemonDetails.gender;
+    pokemon.egg = PokemonDetails.egg;
+    
+    const abilities = detailsPoke.abilities.map((typeSlot) => typeSlot.ability.name)
+    const [ability] = abilities
+
+    pokemon.abilities = abilities
+    pokemon.ability = ability
+
+
+    return pokemon
+
 }

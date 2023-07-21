@@ -5,12 +5,15 @@
     width: 100vw;
 }
 
-#detailPage{
+#detail_btn{
     background-color: #e0d2de;
     border-radius: 1rem;
     margin-bottom: 0.3rem;
     padding: 2px;
     filter: drop-shadow(4px 2px 7px);
+    border: none;
+    width: 75px;
+    cursor: pointer;
 }
 
 .normal {

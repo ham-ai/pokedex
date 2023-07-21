@@ -4,6 +4,12 @@ const limit = 9;
 let offset = 0;
 maxRecord = 151;
 
+function verDetalhes(pokemonId){
+    window.location.href = `detail.html?id=${pokemonId}`
+    
+}
+
+
 function loadPokemonItens(offset, limit){
 
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
@@ -13,7 +19,7 @@ function loadPokemonItens(offset, limit){
             <span class="name">${pokemon.name}</span>
                 <div class="detail">
                     <ol class="types">
-                        <button id="detailPage">detail</button>
+                    <button id="detail_btn" onclick="verDetalhes(${pokemon.number})">detail</button>
                             ${pokemon.types.map((type) => `<li class="${type}">${type}</li>`).join('')}
                     </ol>
                     <img src="${pokemon.photo}" alt="${pokemon.name}">
