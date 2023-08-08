@@ -5,8 +5,7 @@ let offset = 0;
 maxRecord = 151;
 
 function verDetalhes(pokemonId){
-    window.location.href = `detail.html?id=${pokemonId}`
-    
+    window.location.href = `detail.html?id=${pokemonId}` 
 }
 
 

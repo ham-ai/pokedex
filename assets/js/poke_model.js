@@ -5,14 +5,10 @@ class Pokemon{
     type;
     types = [];
     photo;   
-}
-
-class PokemonDetails{
     species;
     height;
     weight;
     abilities = [];
     gender;
     egg;
-
 }
