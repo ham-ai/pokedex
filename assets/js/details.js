@@ -20,7 +20,7 @@ const pokeDetailApi = {}
     pokemonsDet.height = detailsPoke.height;
     pokemonsDet.weight = detailsPoke.weight;
     pokemonsDet.gender = detailsPoke.gender;
-    pokemonsDet.number = detailsPoke.number;
+    pokemonsDet.number = detailsPoke.id;
     pokemonsDet.photo = detailsPoke.photo;
 
     const types = detailsPoke.types.map((typeSlot) => typeSlot.type.name)
@@ -51,20 +51,62 @@ const pokeDetailApi = {}
     detalhes.classList.add('detalhes');
 
     detalhes.innerHTML = `
-    <div class="icons"> 
-        <div class="back_page">
-          <a href="../index.html">
-            <img src="/assets/img/arrow-left.svg" alt="" srcset="">
-          </a>
-        </div>
-        <div class="heart">
-            <img src="/assets/img/heart.svg" alt="" srcset="">
-        </div>
-    </div>
-    <div class="title"> 
-        <h1>${pokemon.name}</h1>
-    </div>
-    <div class="tags">
+    <div class="card_header">
+                
+                <section class="icons">
+                   
+                    <div class="arrow">
+                        <a href="../index.html">
+                            <img src="/assets/img/arrow-left.svg" alt="arrow_left">
+                        </a>
+                    </div>
+                    
+                    <div class="heart">
+                            <img src="/assets/img/heart.svg" alt="heart">
+                    </div>
+
+                </section>
+                
+                <section class="top_card">
+
+                    <div class="name_number">
+                        <h1>${pokemon.name}</h1>
+                        <h3>#${pokemon.number}</h3>
+                    </div>
+
+                    <div class="tags">
+${pokemon.types.map((type) => `<h5 class="${type}">${type}</h5>`).join('')}
+                    </div>
+
+                </section>
+                
+                <section class="poke_image">
+                    <div class="photo">
+                        <img src="${pokemon.photo}" alt="${pokemon.name}">
+                    </div>
+                </section>
+
+            </div>
+          <div class="card_body">
+          </div>           
+            
+    `;
+
+    detalhesContainer.appendChild(detalhes);
+  }
+
+  // Chamando a função para obter e exibir os dados dos Pokémon
+exibirDetalhesPokemon()
+
+
+
+/*
+
+
+<div class="card_body">
+            </div>
+        </div> 
+    </section>
     ${pokemon.types.map((type) => `<div class="${type} type1">${type}</div>`).join('')} 
     </div>
     
@@ -94,10 +136,5 @@ const pokeDetailApi = {}
         </div>
     </div>
 </div>
-    `;
 
-    detalhesContainer.appendChild(detalhes);
-  }
-
-  // Chamando a função para obter e exibir os dados dos Pokémon
-exibirDetalhesPokemon()
+*/
