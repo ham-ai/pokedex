@@ -2,7 +2,7 @@ const pokemonList = document.getElementById('pokemonList');
 const loadmoreButton = document.getElementById('loadmore_btn')
 const limit = 9;
 let offset = 0;
-maxRecord = 151;
+const maxRecord = 151;
 
 function verDetalhes(pokemonId){
     window.location.href = `detail.html?id=${pokemonId}` 

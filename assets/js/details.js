@@ -57,12 +57,12 @@ const pokeDetailApi = {}
                    
                     <div class="arrow">
                         <a href="../index.html">
-                            <img src="/assets/img/arrow-left.svg" alt="arrow_left">
+                            <img src="assets/img/arrow-left.svg" alt="arrow_left">
                         </a>
                     </div>
                     
                     <div class="heart">
-                            <img src="/assets/img/heart.svg" alt="heart">
+                            <img src="assets/img/heart.svg" alt="heart">
                     </div>
 
                 </section>
