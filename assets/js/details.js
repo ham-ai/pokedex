@@ -48,47 +48,39 @@ const pokeDetailApi = {}
     const detalhesContainer = document.getElementById('cardList');
 
     const detalhes = document.createElement('div');
-    detalhes.classList.add('detalhes');
+    detalhes.classList.add('detalhe');
 
     detalhes.innerHTML = `
-    <div class="card_header">
-                
+    <div class="card ${pokemon.type}">
+        <div class="card_header"> 
                 <section class="icons">
-                   
                     <div class="arrow">
                         <a href="../index.html">
                             <img src="assets/img/arrow-left.svg" alt="arrow_left">
                         </a>
-                    </div>
-                    
+                    </div>                    
                     <div class="heart">
                             <img src="assets/img/heart.svg" alt="heart">
                     </div>
-
-                </section>
-                
+                </section>                
                 <section class="top_card">
-
                     <div class="name_number">
                         <h1>${pokemon.name}</h1>
                         <h3>#${pokemon.number}</h3>
                     </div>
-
                     <div class="tags">
-${pokemon.types.map((type) => `<h5 class="${type}">${type}</h5>`).join('')}
+                    ${pokemon.types.map((type) => `<h5 class="${type}">${type}</h5>`).join('')}
                     </div>
-
-                </section>
-                
+                </section>                
                 <section class="poke_image">
                     <div class="photo">
                         <img src="${pokemon.photo}" alt="${pokemon.name}">
                     </div>
                 </section>
-
+        </div>
+            <div class="card_body">
             </div>
-          <div class="card_body">
-          </div>           
+    </div>           
             
     `;
 

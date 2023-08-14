@@ -12,7 +12,6 @@
 /* card */
 
 .card{
-    background-color: rgb(100, 8, 8);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +42,8 @@
     width: 18rem;
     height: 18rem;
     flex-wrap: nowrap;
-    border-radius: 2rem 2rem 1.5rem 1.5rem;
+    border-radius: 2rem 2rem 1rem 1rem;
+    margin-bottom: -7px;
 }
 
 /* icons */
@@ -134,263 +134,146 @@
 
 /* types */
 
-.grass{
-    background-color: #97c650;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.poison{
-    background-color: #a33da3;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    border-radius: 1rem;
-}
-
-
-.normal {
-    background-color: #a6a877;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.grass {
-    background-color: #77c850;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.fire {
-    background-color: #ee7f30;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.water {
-    background-color: #678fee;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.electric {
-    background-color: #f7cf2e;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.ice {
-    background-color: #98d5d7;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.ground {
-    background-color: #dfbf69;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.flying {
-    background-color: #a98ff0;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.poison {
-    background-color: #a040a0;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.fighting {
-    background-color: #bf3029;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.psychic {
-    background-color: #f65687;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.dark {
-    background-color: #725847;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.rock {
-    background-color: #b8a137;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.bug {
-    background-color: #a8b720;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.ghost {
-    background-color: #6e5896;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.steel {
-    background-color: #b9b7cf;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.dragon {
-    background-color: #6f38f6;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-.fairy {
-    background-color: #f9aec7;
-    display: flex;
-    width: 4rem;
-    height: 1.6rem;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 0;
-    margin: 0;
-}
+    .normal {
+        background-color: #a6a877;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .grass {
+        background-color: #77c850;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .fire {
+        background-color: #ee7f30;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .water {
+        background-color: #678fee;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .electric {
+        background-color: #f7cf2e;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .ice {
+        background-color: #98d5d7;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .ground {
+        background-color: #dfbf69;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .flying {
+        background-color: #a98ff0;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .poison {
+        background-color: #a040a0;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .fighting {
+        background-color: #bf3029;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .psychic {
+        background-color: #f65687;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .dark {
+        background-color: #725847;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .rock {
+        background-color: #b8a137;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .bug {
+        background-color: #a8b720;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .ghost {
+        background-color: #6e5896;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .steel {
+        background-color: #b9b7cf;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .dragon {
+        background-color: #6f38f6;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
+    
+    .fairy {
+        background-color: #f9aec7;
+        border-radius: 1rem;
+        margin-bottom: .3rem;
+        padding: 5px;
+        filter: drop-shadow(black 4px 2px 7px);
+    }
