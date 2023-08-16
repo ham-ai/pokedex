@@ -22,8 +22,7 @@
 <body>
     <section class="content">
          <div class="card" id="cardList">
-            <div class="card_header">
-                
+            <div class="card_header">                
                 <section class="icons">
                    
                     <div class="arrow">
@@ -36,8 +35,7 @@
                             <img src="/assets/img/heart.svg" alt="heart">
                     </div>
 
-                </section>
-                
+                </section>                
                 <section class="top_card">
                     <div class="name_number">
                         <h1>Bulbasaur</h1>
@@ -47,24 +45,76 @@
                         <h5 class="grass">Grass</h5>
                         <h5 class="poison">Poison</h5>
                     </div>
-                </section>
-                
+                </section>                
                 <section class="poke_image">
                     <div class="photo">
                         <img src="/assets/img/6000.png" alt="pokemon_name">
                     </div>
                 </section>
+            </div>           
+            <div class="card_body">    
+                    <section class="body_tags"> <!-- aqui fica todas as tags do body, about etc -->                        
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'about')">About</button>
+                            <button class="tablinks" onclick="openCity(event, 'base')">Base Stats</button>
+                            <button class="tablinks" onclick="openCity(event, 'evolution')">Evolution</button>
+                            <button class="tablinks" onclick="openCity(event, 'moves')">Moves</button>
+                        </div>
+                        
+                        <div id="about" class="tabcontent">
+                            <ol class="ol_tg">
+                                <p>Species</p><li>Teste</li>
+                            </ol>
+                            <ol class="ol_tg">
+                                <p>Height</p><li>Teste</li>
+                            </ol>
+                            <ol class="ol_tg">
+                                <p>Weight</p><li>Teste</li>
+                            </ol>
+                            <ol class="ol_tg">
+                                <p>Abilities</p><li>Teste</li>
+                            </ol>                    
+                        </div>
 
+                        <div id="base" class="tabcontent active">                           
+                            <ol class="ol_tg">
+                                <p>HP</p><li>Base</li>
+                            </ol>
+                            <ol class="ol_tg">
+                                <p>Attack</p><li>Base</li>
+                            </ol>
+                            <ol class="ol_tg">
+                                <p>Defense</p><li>Base</li>
+                            </ol>
+                            <ol class="ol_tg">
+                                <p>Sp. Atk</p><li>Base</li>
+                            </ol>
+                            <ol class="ol_tg">
+                                <p>Sp. Def</p><li>Base</li>
+                            </ol>
+                            <ol class="ol_tg">
+                                <p>Speed</p><li>Base</li>
+                            </ol>
+                        </div>
 
-            </div>
-           
-            <div class="card_body">
+                        <div id="evolution" class="tabcontent active">
+                            <ol class="ol_tg">
+                                <p>Evolution</p><li>Evolution</li>
+                            </ol>
+                        </div>
+                        
+                        <div id="moves" class="tabcontent active">
+                            <ol class="ol_tg">
+                                <p>Moves</p><li>Moves</li>
+                            </ol>
+                        </div>
+                    </section>
             </div>
         </div> 
     </section>
-
     <script src="assets/js/poke_model.js"></script>
     <script src="assets/js/poke_api.js"></script>
     <script src="assets/js/details.js"></script>
+    <script src="assets/js/accordion.js"></script>
 </body>
 </html>

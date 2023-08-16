@@ -78,8 +78,62 @@ const pokeDetailApi = {}
                     </div>
                 </section>
         </div>
-            <div class="card_body">
+        <div class="card_body">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'about')">About</button>
+                <button class="tablinks" onclick="openCity(event, 'base')">Base Stats</button>
+                <button class="tablinks" onclick="openCity(event, 'evolution')">Evolution</button>
+                <button class="tablinks" onclick="openCity(event, 'moves')">Moves</button>
             </div>
+        
+            <div id="about" class="tabcontent">
+                <ol class="ol_tg">
+                    <p>Species</p><li>Teste</li>
+                </ol>
+                <ol class="ol_tg">
+                    <p>Height</p><li>${pokemon.height}</li>
+                </ol>
+                <ol class="ol_tg">
+                    <p>Weight</p><li>${pokemon.weight}</li>
+                </ol>
+                <ol class="ol_tg">
+                    <p>Abilities</p>${pokemon.types.map((ability) =>`<li>${ability}</li>`).join('')}
+                </ol>                    
+            </div>
+
+            <div id="base" class="tabcontent active">                           
+                <ol class="ol_tg">
+                    <p>HP</p><li>Base</li>
+                </ol>
+                <ol class="ol_tg">
+                    <p>Attack</p><li>Base</li>
+                </ol>
+                <ol class="ol_tg">
+                    <p>Defense</p><li>Base</li>
+                </ol>
+                <ol class="ol_tg">
+                    <p>Sp. Atk</p><li>Base</li>
+                </ol>
+                <ol class="ol_tg">
+                    <p>Sp. Def</p><li>Base</li>
+                </ol>
+                <ol class="ol_tg">
+                    <p>Speed</p><li>Base</li>
+                </ol>
+            </div>
+
+            <div id="evolution" class="tabcontent active">
+                <ol class="ol_tg">
+                    <p>Evolution</p><li>Evolution</li>
+                </ol>
+            </div>
+
+            <div id="moves" class="tabcontent active">
+                <ol class="ol_tg">
+                    <p>Moves</p><li>Moves</li>
+                </ol>
+            </div>
+        </div>
     </div>           
             
     `;
@@ -89,44 +143,3 @@ const pokeDetailApi = {}
 
   // Chamando a função para obter e exibir os dados dos Pokémon
 exibirDetalhesPokemon()
-
-
-
-/*
-
-
-<div class="card_body">
-            </div>
-        </div> 
-    </section>
-    ${pokemon.types.map((type) => `<div class="${type} type1">${type}</div>`).join('')} 
-    </div>
-    
-    <div class="image_body"> 
-        <img src="${pokemon.photo}" id="imgPoke" alt="${pokemon.name}" srcset="">
-    </div>
-    <div class="card_body">
-        <div class="body_tags">
-            <div class="about">About</div>
-            <div class="base_stats">Base Stats</div>
-            <div class="evolution">Evolution</div>
-            <div class="moves">Moves</div>
-        </div>
-        <div class="about_tags">
-            <div class="species">${pokemon.species}</div>
-            <div class="height">${pokemon.height}</div>
-            <div class="weight">${pokemon.weight}</div>
-            <div class="abilities">${pokemon.abilities.map((ability)=>
-                `<div>${ability}</div>`
-            ).join('')}</div>
-            <span class="breeding">
-                <h4 id="br1">Breeding</h4>
-                <div class="gender">Gender</div>
-                <div class="egg_group">Egg Groups</div>
-                <div class="egg_cycle">Egg Cycle</div>
-            </span>
-        </div>
-    </div>
-</div>
-
-*/
