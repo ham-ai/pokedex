@@ -101,7 +101,7 @@ const pokeDetailApi = {}
                 </ol>                    
             </div>
 
-            <div id="base" class="tabcontent active">                           
+            <div id="base" class="tabcontent" style="display: none;">                           
                 <ol class="ol_tg">
                     <p>HP</p><li>Base</li>
                 </ol>
@@ -122,13 +122,13 @@ const pokeDetailApi = {}
                 </ol>
             </div>
 
-            <div id="evolution" class="tabcontent active">
+            <div id="evolution" class="tabcontent" style="display: none;">
                 <ol class="ol_tg">
                     <p>Evolution</p><li>Evolution</li>
                 </ol>
             </div>
 
-            <div id="moves" class="tabcontent active">
+            <div id="moves" class="tabcontent" style="display: none;">
                 <ol class="ol_tg">
                     <p>Moves</p><li>Moves</li>
                 </ol>
