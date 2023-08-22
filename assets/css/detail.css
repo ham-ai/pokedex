@@ -1,101 +1,103 @@
-
 .content {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e79191;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e79191;
 }
 
 /* card */
 
-.card{
-    background-color: #725847; /*tirar depois*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 2rem;
-    width: 18rem;
-    height: 34rem;
+.card {
+  background-color: #725847; /*tirar depois*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  width: 18rem;
+  height: 34rem;
 }
 
-.card_header{
-    background-color: transparent;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 18rem;
-    height: 16rem;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: flex-start;
+.card_header {
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: 16rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.card_body{
-    background-color: whitesmoke;
-    display: flex;
-    position: relative;
-    width: 18rem;
-    height: 18rem;
-    flex-wrap: nowrap;
-    border-radius: 2rem 2rem 1rem 1rem;
-    margin-bottom: -7px;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    align-content: center;
-
+.card_body {
+  background-color: whitesmoke;
+  display: flex;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  flex-wrap: nowrap;
+  border-radius: 2rem 2rem 1rem 1rem;
+  margin-bottom: -7px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
 }
 
 /* icons */
 
-.icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 60px;
-    width: 18rem;
-    z-index: 1;
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 35px;
+  width: 18rem;
+  z-index: 1;
+  align-items: center;
 }
 
-.arrow img{
-    display: flex;
-    width: 2.5rem;
-    margin: 1rem;
-    padding: 6px;
-    cursor: pointer;
+.arrow img {
+  display: flex;
+  width: 2.5rem;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.heart img{
-    display: flex;
-    width: 1.6rem;
-    margin: 1.4rem;
+.heart img {
+  display: flex;
+  width: 1.6rem;
+  padding: 3px;
+  margin-right: 13px;
+  margin-top: 5px;
 }
 
 /*card top*/
 
-.top_card{
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin-top: -50px;
-    width: 18rem;
-    height: 10rem;
-    align-items: flex-start;
-    justify-content: center;
+.top_card {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 10px;
+  width: 18rem;
+  height: 2rem;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.name_number{
+.name_number {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 1rem;
+    padding: 1.5rem;
     color: #fff;
     width: 18rem;
     height: 6rem;
@@ -103,7 +105,7 @@
     text-transform: capitalize;
 }
 
-.tags{
+.tags {
     display: flex;
     flex-direction: row;
     color: #fff;
@@ -112,263 +114,246 @@
     padding: 0;
     margin-top: -35px;
     background-color: transparent;
-    width: 11rem;
+    width: 8rem;
     height: 2rem;
+    flex-wrap: nowrap;
 }
-
 
 /* image pokemon */
 
-.photo img{
-    display: flex;
+.photo img {
+    display: block;
     position: relative;
-    width: 7rem;
+    width: 10rem;
+    height: 9rem;
     z-index: 1;
+    margin-top: 60px;
 }
 
-.poke_image{
+.poke_image {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 18rem;
-    height: 7rem;
+    height: 11rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 6px;
+    margin-right: 0;
+    flex-direction: row;
+    align-items: center;
 }
-
 
 /* types */
 
-    .normal {
-        background-color: #a6a877;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .grass {
-        background-color: #77c850;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .fire {
-        background-color: #ee7f30;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .water {
-        background-color: #678fee;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .electric {
-        background-color: #f7cf2e;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .ice {
-        background-color: #98d5d7;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .ground {
-        background-color: #dfbf69;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .flying {
-        background-color: #a98ff0;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .poison {
-        background-color: #a040a0;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .fighting {
-        background-color: #bf3029;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .psychic {
-        background-color: #f65687;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .dark {
-        background-color: #725847;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .rock {
-        background-color: #b8a137;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .bug {
-        background-color: #a8b720;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .ghost {
-        background-color: #6e5896;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .steel {
-        background-color: #b9b7cf;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .dragon {
-        background-color: #6f38f6;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
-    
-    .fairy {
-        background-color: #f9aec7;
-        border-radius: 1rem;
-        margin-bottom: .3rem;
-        padding: 5px;
-        filter: drop-shadow(black 4px 2px 7px);
-    }
+.normal {
+  background-color: #d4a373;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
 
+.grass {
+  background-color: #87c38f;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
 
-    /* card-body */
+.fire {
+  background-color: #e5383b;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
 
-    
-.body_tags{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    width: 18rem;
-    height: 18rem;
-    padding: 1rem;
-    margin: 0;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+.water {
+  background-color: #a2d2ff;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.electric {
+  background-color: #ffee32;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.ice {
+  background-color: #bde0fe;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.ground {
+  background-color: #99582a;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.flying {
+  background-color: #cce3de;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.poison {
+  background-color: #cdb4db;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.fighting {
+  background-color: #bb9457;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.psychic {
+  background-color: #ffafcc;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.dark {
+  background-color: #1b263b;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.rock {
+  background-color: #f6bd60;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.bug {
+  background-color: #a8b720;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.ghost {
+  background-color: #6e5896;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.steel {
+  background-color: #e5e5e5;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.dragon {
+  background-color: #9a031e;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+.fairy {
+  background-color: #ffc8dd;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 5px;
+}
+
+/* card-body */
+
+.body_tags {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 18rem;
+  height: 18rem;
+  padding: 1rem;
+  margin: 0;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 
 /* Style the tab */
 .tab {
-    display: flex;
-    padding: 0;
-    margin: 1rem;
-    background-color: transparent;
-    width: 16rem;
-    height: 1rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-content: center;
+  display: flex;
+  padding: 0;
+  margin: 1rem;
+  background-color: transparent;
+  width: 16rem;
+  height: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-    border: none;
-    display: flex;
-    padding: 0;
-    color: black;
-    margin-top: 10px;
-    margin-left: 5px;
-    width: 4rem;
-    font-size: small;
-    outline: none;
-    text-align: center;
-    cursor: pointer;
-    justify-content: center;
-    background-color: #F5F5F5;
+  border: none;
+  display: flex;
+  padding: 0;
+  color: black;
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 4rem;
+  font-size: small;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  justify-content: center;
+  background-color: #f5f5f5;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #F5F5F5;
-    border-bottom: 2px solid #ACB5EB;
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #acb5eb;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-    background-color: #F5F5F5;
-    border-bottom: 2px solid #ACB5EB;
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #acb5eb;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: flex;
-    padding: 5px;
-    margin-left: -15px;
-    width: 17rem;
-    height: 12rem;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    font-size: small;
+  display: flex;
+  padding: 5px;
+  margin-left: -15px;
+  width: 17rem;
+  height: 12rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: small;
 }
-
 
 /* tags ol li */
 
- .ol_tg{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 10rem;
-    height: 2rem;
-    margin: 3px;
-    padding: 1rem;
-    list-style: none;
- }
+.ol_tg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem;
+  height: 2rem;
+  margin: 3px;
+  padding: 1rem;
+  list-style: none;
+}

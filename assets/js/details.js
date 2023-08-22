@@ -68,9 +68,9 @@ const pokeDetailApi = {}
                         <h1>${pokemon.name}</h1>
                         <h3>#${pokemon.number}</h3>
                     </div>
-                    <div class="tags">
-                    ${pokemon.types.map((type) => `<h5 class="${type}">${type}</h5>`).join('')}
-                    </div>
+                        <div class="tags">
+                        ${pokemon.types.map((type) => `<h5 class="${type}">${type}</h5>`).join('')}
+                        </div>
                 </section>                
                 <section class="poke_image">
                     <div class="photo">
