@@ -4,24 +4,22 @@ const pokeDetailApi = {}
   function exibirDetalhesPokemon() {
     const urlParams = new URLSearchParams(window.location.search);
     const pokemonId = urlParams.get('id');
-      const url = `https://pokeapi.co/api/v2/pokemon/${pokemonId}`
+    const url = `https://pokeapi.co/api/v2/pokemon-form/${pokemonId}/`
+    
     return  fetch(url)
     .then((response) => response.json())
     .then((jsonBody) => DetailsPokePage(jsonBody)) //Aqui precisei retornar apenas o jsonBody com a função já para construir a página de detalhes Pokemon
     .catch((error) => console.log(error))
   }
 
+
   function DetailsPokePage(detailsPoke){
     //fiz algumas alterações no código para condizer com a nova classe
     const pokemonsDet = new PokemonDetails()
-    pokemonsDet.name = detailsPoke.name;
-    pokemonsDet.egg = detailsPoke.egg;
-    pokemonsDet.species = detailsPoke.species;
-    pokemonsDet.height = detailsPoke.height;
-    pokemonsDet.weight = detailsPoke.weight;
-    pokemonsDet.gender = detailsPoke.gender;
-    pokemonsDet.number = detailsPoke.id;
-    pokemonsDet.photo = detailsPoke.photo;
+    
+    pokemonsDet.name = detailsPoke.name
+    pokemonsDet.number = detailsPoke.id
+
 
     const types = detailsPoke.types.map((typeSlot) => typeSlot.type.name)
     const [type] = types
@@ -29,14 +27,7 @@ const pokeDetailApi = {}
       pokemonsDet.types = types
       pokemonsDet.type = type
 
-      pokemonsDet.photo = detailsPoke.sprites.other.dream_world.front_default
-
-
-    const abilities = detailsPoke.abilities.map((typeSlot) => typeSlot.ability.name)
-    const [ability] = abilities
-
-    pokemonsDet.abilities = abilities
-    pokemonsDet.ability = ability
+      pokemonsDet.photo = detailsPoke.sprites.front_default
 
 
     return exibirDetalhes(pokemonsDet)
@@ -44,7 +35,7 @@ const pokeDetailApi = {}
 }
 
   // Exibir os detalhes do Pokémon na página de detalhes
-  function exibirDetalhes(pokemon) {
+ function exibirDetalhes(pokemon) {
     const detalhesContainer = document.getElementById('cardList');
 
     const detalhes = document.createElement('div');
