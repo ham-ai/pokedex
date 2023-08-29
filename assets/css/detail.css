@@ -22,7 +22,11 @@
 }
 
 .card_header {
-  background-color: transparent;
+  background-image: url("/assets/img/pokeball.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8rem;
+  background-position-y: 100px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -300,7 +304,7 @@
   align-content: center;
 }
 
-/* Style the buttons that are used to open the tab content */
+/* buttons tab content */
 .tab button {
   border: none;
   display: flex;
@@ -317,19 +321,16 @@
   background-color: #f5f5f5;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #f5f5f5;
   border-bottom: 2px solid #acb5eb;
 }
 
-/* Create an active/current "tab button" class */
 .tab button.active {
   background-color: #f5f5f5;
   border-bottom: 2px solid #acb5eb;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: flex;
   padding: 5px;
@@ -351,9 +352,31 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 10rem;
+  width: 17rem;
   height: 2rem;
   margin: 3px;
   padding: 1rem;
   list-style: none;
+}
+
+/* bar progress & stats */
+
+progress {
+  background: #c7c7c7;
+  border-radius: 10px;
+  height: 10px;
+}
+
+progress::-webkit-progress-value {
+  background: #219ebc;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background: rgb(178, 178, 184);
+  background-color: transparent;
+}
+
+.bar_stats{
+  margin-right: 10px;
 }

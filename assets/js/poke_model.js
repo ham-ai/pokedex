@@ -13,5 +13,13 @@ class PokemonDetails extends Pokemon{
     abilities = [];
     gender;
     egg;
+}
 
+class BaseStats extends Pokemon{
+    hp;
+    attack;
+    defense;
+    special_atk;
+    special_dfs;
+    speed;
 }
