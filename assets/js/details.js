@@ -35,7 +35,9 @@ function exibirDetalhesPokemon() {
    detailsPoke.moves[0].move.name,
    detailsPoke.moves[1].move.name,
    detailsPoke.moves[2].move.name,
-   detailsPoke.moves[3].move.name
+   detailsPoke.moves[3].move.name,
+   detailsPoke.moves[4].move.name,
+   detailsPoke.moves[5].move.name
   ];
 
   pokemonsDet.moves = moves;
@@ -96,10 +98,10 @@ function exibirDetalhes(pokemon) {
         </div>
         
           <div id="about" class="tabcontent">
-            <ol class="ol_tg"><p>Species</p><li>${pokemon.species}</li></ol>
-            <ol class="ol_tg"><p>Height</p><li>${pokemon.height}</li></ol>
-            <ol class="ol_tg"><p>Weight</p><li>${pokemon.weight}</li></ol>
-            <ol class="ol_tg"><p>Abilities</p>${pokemon.types.map((ability) => `<li>${ability}</li>`)
+            <ol class="ol_about"><p>Species</p><li>${pokemon.species}</li></ol>
+            <ol class="ol_about"><p>Height</p><li>${pokemon.height}</li></ol>
+            <ol class="ol_about"><p>Weight</p><li>${pokemon.weight}</li></ol>
+            <ol class="ol_about"><p>Abilities</p>${pokemon.types.map((ability) => `<li>${ability}</li>`)
             .join("")}
             </ol>                    
           </div>
@@ -173,8 +175,11 @@ function exibirDetalhes(pokemon) {
                 </div>
                 
                 <div id="moves" class="tabcontent" style="display: none;">
-                  <ol class="ol_tg">
-                      <p>Moves</p><li class="moves_li">${pokemon.moves}</li>
+                  <ol class="ol_moves">
+                      <li class="moves_li">${pokemon.moves[0]}</li>
+                      <li class="moves_li">${pokemon.moves[1]}</li>
+                      <li class="moves_li">${pokemon.moves[2]}</li>
+                      <li class="moves_li">${pokemon.moves[3]}</li>
                   </ol>
             </div>
         </div>

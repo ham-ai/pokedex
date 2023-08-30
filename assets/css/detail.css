@@ -358,9 +358,42 @@
   padding: 1rem;
   list-style: none;
 }
+.ol_about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 17rem;
+  height: 3rem;
+  margin: 3px;
+  padding: 1rem;
+  list-style: none;
+}
+
+.ol_moves{
+  display: flex;
+  width: 17rem;
+  height: 14rem;
+  margin: 0px;
+  padding: 1rem;
+  list-style: none;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: stretch;
+}
 
 .moves_li{
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0;
+  width: 9rem;
+  height: 5rem;
+  justify-content: center;
 }
 
 #moves{
