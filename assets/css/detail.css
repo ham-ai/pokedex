@@ -359,6 +359,14 @@
   list-style: none;
 }
 
+.moves_li{
+  display: flex;
+}
+
+#moves{
+  display: flex;
+}
+
 /* bar progress & stats */
 
 progress {
